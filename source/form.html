@@ -31,7 +31,78 @@
     </header>
     <!-- Основная часть -->
     <main>
-        <!-- Здесь будут блоки из следующего задания -->
+        <h1 class="title">Подбор программы</h1>>
+        <form class="plan" method="post" action="https://echo.htmlacademy.ru">
+            <h2 class="visually-hidden">Анкета для подбора программы кошачьего питания</h2>
+            <p class="plan__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <!-- Данные кота -->
+            <fieldset class="plan__part">
+                <legend class="visually-hidden">Данные вашего кота</legend>
+                <label class="plan_label" for="cat-name">Имя:*
+                  <input class="plan__field" type="text" name="cat-name" id="cat-name">
+                </label>
+                <label class="plan_label" for="cat-weight">Вес (кг):*
+                  <input class="plan__field" type="text" name="cat-weight" id="cat-weight">
+                </label>
+                <label class="plan_label" for="cat-age">Возраст (лет):
+                  <input class="plan__field" type="text" name="cat-age" id="cat-age">
+                </label>
+            </fieldset>
+            <!-- Цель программы -->
+            <fieldset class="plan__part">
+                <legend class="visually-hidden">Цель программы питания</legend>
+                <label class="plan__label" for="plan-slim">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-slim">
+                  Похудение
+                </label>
+                <label class="plan__label" for="plan-gain">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-gain">
+                  Набор массы
+                </label>
+                <label class="plan__label" for="plan-unknown">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-unknown">
+                  Не знаю (нужен ваш совет)
+                </label>
+            </fieldset>
+            <!-- Контакты хозяина -->
+            <fieldset class="plan__part">
+                <legend class="plan__title">Контактные данные (владельца кота)</legend>
+                <div class="plan__wrapper">
+                    <label class="plan_label" for="usermail">E-mail:*
+                      <input class="plan__field" type="email" name="usermail" id="usermail" value="Kuklachev@gmail.com">
+                    </label>
+                    <label class="plan_label" for="usertel">Телефон:*
+                      <input class="plan__field" type="tel" name="usertel" id="usertel" value="8 (960) 900-60-90">
+                    </label>
+                </div>
+            </fieldset>
+            <!-- Комментарий -->
+            <fieldset class="plan__part">
+                <legend class="plan__title">Комментарий</legend>
+                <textarea class="plan__comment">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+            <!-- Дополнительные товары -->
+            <fieldset class="plan__part">
+                <label class="plan__label" for="add-sugar">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-sugar">
+                  Сахарозаменитель
+                </label>
+                <label class="plan__label" for="add-water">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-water">
+                  Питьевая вода
+                </label>
+                <label class="plan__label" for="add-milk">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-milk">
+                  Молоко
+                </label>
+                <label class="plan__label" for="add-pills">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-pills">
+                  Витамины
+                </label>
+            </fieldset>
+            <button class="btn" type="submit">Отправить заявку</button>
+            <span class="plan__note">*&mdash;Обязательные поля</span>
+        </form>
     </main>
     <!-- Футер -->
     <footer class="page-footer">
