@@ -38,29 +38,29 @@
             <!-- Данные кота -->
             <fieldset class="plan__part">
                 <legend class="visually-hidden">Данные вашего кота</legend>
-                <label class="plan_label" for="cat-name">Имя:*
-                  <input class="plan__field" type="text" name="cat-name" id="cat-name">
+                <label class="plan_label">Имя:*
+                  <input class="plan__field" type="text" name="cat-name" id="cat-name" value="cat-name">
                 </label>
-                <label class="plan_label" for="cat-weight">Вес (кг):*
-                  <input class="plan__field" type="text" name="cat-weight" id="cat-weight">
+                <label class="plan_label">Вес (кг):*
+                  <input class="plan__field" type="number" name="cat-weight" id="cat-weight" value="cat-weight">
                 </label>
-                <label class="plan_label" for="cat-age">Возраст (лет):
-                  <input class="plan__field" type="text" name="cat-age" id="cat-age">
+                <label class="plan_label">Возраст (лет):
+                  <input class="plan__field" type="number" name="cat-age" id="cat-age" value="cat-age">
                 </label>
             </fieldset>
             <!-- Цель программы -->
             <fieldset class="plan__part">
                 <legend class="visually-hidden">Цель программы питания</legend>
-                <label class="plan__label" for="plan-slim">
-                  <input class="plan__radio" type="radio" name="goals" id="plan-slim">
+                <label class="plan__label">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-slim" value="plan-slim">
                   Похудение
                 </label>
-                <label class="plan__label" for="plan-gain">
-                  <input class="plan__radio" type="radio" name="goals" id="plan-gain">
+                <label class="plan__label">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-gain" value="plan-gain">
                   Набор массы
                 </label>
-                <label class="plan__label" for="plan-unknown">
-                  <input class="plan__radio" type="radio" name="goals" id="plan-unknown">
+                <label class="plan__label">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-unknown" value="plan-unknown">
                   Не знаю (нужен ваш совет)
                 </label>
             </fieldset>
@@ -68,10 +68,10 @@
             <fieldset class="plan__part">
                 <legend class="plan__title">Контактные данные (владельца кота)</legend>
                 <div class="plan__wrapper">
-                    <label class="plan_label" for="usermail">E-mail:*
+                    <label class="plan_label">E-mail:*
                       <input class="plan__field" type="email" name="usermail" id="usermail" value="Kuklachev@gmail.com">
                     </label>
-                    <label class="plan_label" for="usertel">Телефон:*
+                    <label class="plan_label">Телефон:*
                       <input class="plan__field" type="tel" name="usertel" id="usertel" value="8 (960) 900-60-90">
                     </label>
                 </div>
@@ -83,20 +83,20 @@
             </fieldset>
             <!-- Дополнительные товары -->
             <fieldset class="plan__part">
-                <label class="plan__label" for="add-sugar">
-                  <input class="plan__add" type="checkbox" name="add-items" id="add-sugar">
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-sugar" value="sugar">
                   Сахарозаменитель
                 </label>
-                <label class="plan__label" for="add-water">
-                  <input class="plan__add" type="checkbox" name="add-items" id="add-water">
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-water" value="water">
                   Питьевая вода
                 </label>
-                <label class="plan__label" for="add-milk">
-                  <input class="plan__add" type="checkbox" name="add-items" id="add-milk">
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-milk" value="milk">
                   Молоко
                 </label>
-                <label class="plan__label" for="add-pills">
-                  <input class="plan__add" type="checkbox" name="add-items" id="add-pills">
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-pills" value="pills">
                   Витамины
                 </label>
             </fieldset>
@@ -108,9 +108,9 @@
     <footer class="page-footer">
         <div class="address">
             <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-            <p class="address__text">
-                ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
-            </p>
+            <address class="address__text">
+              ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
+            </address>
         </div>
         <div class="map">
             <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
