@@ -31,10 +31,90 @@
     </header>
     <!-- Основная часть -->
     <main>
-        <!-- Здесь будут блоки из следующего задания -->
+        <h1 class="title">Подбор программы</h1>
+        <form class="plan" method="post" action="https://echo.htmlacademy.ru">
+            <h2 class="visually-hidden">Анкета для подбора программы кошачьего питания</h2>
+            <p class="plan__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <!-- Данные кота -->
+            <fieldset class="plan__part">
+                <legend class="visually-hidden">Данные вашего кота</legend>
+                <label class="plan_label">Имя:*
+                  <input class="plan__field" type="text" name="cat-name" id="cat-name" plaseholder="Барсик">
+                </label>
+                <label class="plan_label">Вес (кг):*
+                  <input class="plan__field" type="number" name="cat-weight" id="cat-weight" plaseholder="7">
+                </label>
+                <label class="plan_label">Возраст (лет):
+                  <input class="plan__field" type="number" name="cat-age" id="cat-age" plaseholder="7">
+                </label>
+            </fieldset>
+            <!-- Цель программы -->
+            <fieldset class="plan__part">
+                <legend class="visually-hidden">Цель программы питания</legend>
+                <label class="plan__label">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-slim" value="slim">
+                  Похудение
+                </label>
+                <label class="plan__label">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-gain" value="gain">
+                  Набор массы
+                </label>
+                <label class="plan__label">
+                  <input class="plan__radio" type="radio" name="goals" id="plan-unknown" value="unknown">
+                  Не знаю (нужен ваш совет)
+                </label>
+            </fieldset>
+            <!-- Контакты хозяина -->
+            <fieldset class="plan__part">
+                <legend class="plan__title">Контактные данные (владельца кота)</legend>
+                <div class="plan__wrapper">
+                    <label class="plan_label">E-mail:*
+                      <input class="plan__field" type="email" name="usermail" id="usermail" placeholder="Kuklachev@gmail.com">
+                    </label>
+                    <label class="plan_label">Телефон:*
+                      <input class="plan__field" type="tel" name="usertel" id="usertel" placeholder="8 (960) 900-60-90">
+                    </label>
+                </div>
+            </fieldset>
+            <!-- Комментарий -->
+            <fieldset class="plan__part">
+                <legend class="plan__title">Комментарий</legend>
+                <textarea class="plan__comment">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+            <!-- Дополнительные товары -->
+            <fieldset class="plan__part">
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-sugar" value="sugar">
+                  Сахарозаменитель
+                </label>
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-water" value="water">
+                  Питьевая вода
+                </label>
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-milk" value="milk">
+                  Молоко
+                </label>
+                <label class="plan__label">
+                  <input class="plan__add" type="checkbox" name="add-items" id="add-pills" value="pills">
+                  Витамины
+                </label>
+            </fieldset>
+            <button class="btn" type="submit">Отправить заявку</button>
+            <span class="plan__note">* &mdash; Обязательные поля</span>
+        </form>
     </main>
     <!-- Футер -->
     <footer class="page-footer">
+        <div class="address">
+            <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
+            <address class="address__text">
+              ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
+            </address>
+        </div>
+        <div class="map">
+            <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
+        </div>
         <a class="logo-caption" href="index.html" aria-label="Ссылка на главную">
             <img src="https://via.placeholder.com/101x18" alt="Логотип магазина Cat Energy" width="101" height="18">
         </a>
