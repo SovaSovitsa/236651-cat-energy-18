@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "cat-energy-18",
     "version": "17.0.0",
     "private": true,
@@ -22,6 +22,11 @@
         "build": "gulp css",
         "start": "gulp start"
     },
+    "browserslist": [
+        "last 2 versions",
+        "IE 11",
+        "Firefox ESR"
+    ],
     "editorconfig-cli": [
         "*.json",
         "*.js",
