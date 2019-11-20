@@ -1,0 +1,20 @@
+.menu__list {
+  @include list;
+  text-align: center;
+}
+
+.menu__item {
+  @include indent;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.menu__link {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
