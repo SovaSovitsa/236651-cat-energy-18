@@ -1,0 +1,57 @@
+.result {
+  @include indent;
+}
+
+.result__title {
+  margin: 0;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.result__story {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.result__value {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.result__criterion {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  color: #444444;
+  text-transform: lowercase;
+}
+
+.result__price {
+  text-align: center;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.result__mode {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
