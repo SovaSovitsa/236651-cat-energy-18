@@ -24,10 +24,8 @@
 }
 
 .goals__desc {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  @include text;
   line-height: 18px;
-  color: #444444;
 }
 
 

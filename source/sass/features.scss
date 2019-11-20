@@ -20,9 +20,6 @@
 }
 
 .features__desc {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  @include text;
   line-height: 18px;
-  font-weight: normal;
-  color: #444444;
 }

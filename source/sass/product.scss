@@ -4,12 +4,7 @@
 
 .product__title {
   margin: 0;
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
-  color: #000000;
-  text-transform: uppercase;
+  @include subtitle;
 }
 
 .product__name {
@@ -17,10 +12,8 @@
 }
 
 .product__info {
-  font-family: Arial, sans-serif;
+  @include text;
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
-  color: #444444;
   border-collapse: collapse;
 }

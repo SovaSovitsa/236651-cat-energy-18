@@ -30,11 +30,9 @@
 }
 
 .result__criterion {
-  font-family: Arial, sans-serif;
+  @include text;
   font-size: 12px;
   line-height: 12px;
-  font-weight: normal;
-  color: #444444;
   text-transform: lowercase;
 }
 
@@ -49,10 +47,5 @@
 }
 
 .result__mode {
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
-  color: #000000;
-  text-transform: uppercase;
+  @include subtitle;
 }

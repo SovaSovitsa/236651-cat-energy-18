@@ -1,17 +1,7 @@
 .address__title {
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
-  color: #000000;
-  text-transform: uppercase;
+  @include subtitle;
 }
 
 .address__text {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: normal;
-  font-style: normal;
-  color: #444444;
+  @include text;
 }
