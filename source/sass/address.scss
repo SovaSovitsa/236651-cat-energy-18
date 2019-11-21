@@ -1,6 +1,6 @@
 .address {
   @include side-indents;
-  background-color: #ffffff;
+  background-color: $address-bg;
 }
 
 .address__title {

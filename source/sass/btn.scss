@@ -1,10 +1,9 @@
 .btn {
+  @include side-indents;
   display: block;
   width: 100%;
   padding-top: 13px;
-  padding-right: 20px;
   padding-bottom: 11px;
-  padding-left: 20px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -15,11 +14,11 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: #68b738;
+  background-color: $main-color;
   border: none;
 }
 
 .btn--more {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $text-color;
+  background-color: $bg-color;
 }
