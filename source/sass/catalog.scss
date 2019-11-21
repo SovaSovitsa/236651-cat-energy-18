@@ -3,6 +3,7 @@
 }
 
 .catalog__more {
+  @include side-indents;
   text-align: center;
 }
 
