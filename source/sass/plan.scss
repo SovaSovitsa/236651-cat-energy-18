@@ -1,4 +1,49 @@
-/*Тревис ругается на пустые файлы*/
 .plan {
+  @include side-indents;
+  padding-bottom: 30px;
+}
+
+.plan__desc {
+  @include subtitle;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.plan__part {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: none;
+}
+
+.plan__label {
+  @include subtitle;
+  line-height: 18px;
+}
+
+.plan__field {
+  @include subtitle;
+  padding: 11px 15px;
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+
+.plan__title {
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $subtitle-color;
+}
+
+.plan__comment {
+  @include subtitle;
+  width: 100%;
+  line-height: 18px;
+}
+
+.plan__note {
+  @include text;
   display: block;
+  margin: 0 auto;
+  line-height: 16px;
+  text-align: center;
 }

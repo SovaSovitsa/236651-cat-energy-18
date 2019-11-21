@@ -32,7 +32,7 @@
     </header>
     <!-- Основная часть -->
     <main>
-        <h1 class="title">Подбор программы</h1>
+        <h1 class="title title--form">Подбор программы</h1>
         <form class="plan" method="post" action="https://echo.htmlacademy.ru">
             <h2 class="visually-hidden">Анкета для подбора программы кошачьего питания</h2>
             <p class="plan__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -84,6 +84,7 @@
             </fieldset>
             <!-- Дополнительные товары -->
             <fieldset class="plan__part">
+                <legend class="plan__title">Дополнительно</legend>
                 <label class="plan__label">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-sugar" value="sugar">
                   Сахарозаменитель
@@ -101,7 +102,7 @@
                   Витамины
                 </label>
             </fieldset>
-            <button class="btn" type="submit">Отправить заявку</button>
+            <button class="btn btn--form" type="submit">Отправить заявку</button>
             <span class="plan__note">* &mdash; Обязательные поля</span>
         </form>
     </main>

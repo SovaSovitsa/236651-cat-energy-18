@@ -1,4 +1,42 @@
-/*Тревис ругается на пустые файлы*/
 .other {
-  display: block;
+  @include side-indents;
+}
+
+.other__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $subtitle-color;
+  border-bottom: 1px solid $bg-color;
+}
+
+.other__list {
+  @include list;
+}
+
+.other__item {
+  padding-top: 16px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $bg-color;
+}
+
+.other__name {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $names-color;
+  text-transform: uppercase;
+}
+
+.other__info {
+  @include text;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 14px;
+  border-collapse: collapse;
 }

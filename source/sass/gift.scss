@@ -1,4 +1,17 @@
-/*Тревис ругается на пустые файлы*/
 .gift {
-  display: block;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 160px;
+  padding-bottom: 30px;
+  background: $promo-bg url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
+}
+
+.gift__text {
+  @include text;
+  font-size: 16px;
+  line-height: 20px;
+  color: $title-color;
+  text-align: center;
 }
