@@ -10,7 +10,7 @@
 
 
 .goals {
-  @include indent;
+  @include side-indents;
 }
 
 .goals__title {
