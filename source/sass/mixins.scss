@@ -10,7 +10,7 @@
 }
 
 @mixin subtitle {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -19,7 +19,7 @@
 }
 
 @mixin text {
-  font-family: "Arial", sans-serif;
+  font-family: $body-font;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
