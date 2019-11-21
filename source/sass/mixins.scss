@@ -1,0 +1,28 @@
+@mixin list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin side-indents {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin subtitle {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: $subtitle-color;
+  text-transform: uppercase;
+}
+
+@mixin text {
+  font-family: $body-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+  color: $text-color;
+}

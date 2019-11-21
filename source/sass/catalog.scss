@@ -1,0 +1,17 @@
+.catalog__list {
+  @include list;
+}
+
+.catalog__more {
+  text-align: center;
+}
+
+.catalog__show {
+  @include subtitle;
+}
+
+.catalog__comment {
+  @include text;
+  font-size: 12px;
+  line-height: 16px;
+}

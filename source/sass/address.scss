@@ -1,0 +1,12 @@
+.address {
+  @include side-indents;
+  background-color: $address-bg;
+}
+
+.address__title {
+  @include subtitle;
+}
+
+.address__text {
+  @include text;
+}

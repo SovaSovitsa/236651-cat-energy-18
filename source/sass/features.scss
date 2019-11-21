@@ -1,0 +1,25 @@
+.features {
+  @include side-indents;
+}
+
+.features__subtitle {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  color: $subtitle-color;
+}
+
+.features__list {
+  @include list;
+}
+
+.features__item {
+  padding-left: 80px;
+}
+
+.features__desc {
+  @include text;
+  line-height: 18px;
+}

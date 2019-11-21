@@ -1,0 +1,10 @@
+.copyright {
+  @include side-indents;
+}
+
+.copyright__link {
+  @include text;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+}

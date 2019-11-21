@@ -1,0 +1,12 @@
+.title {
+  font-family: $main-font;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: $title-color;
+}
+
+.title--catalog {
+  line-height: 60px;
+  color: $subtitle-color;
+}

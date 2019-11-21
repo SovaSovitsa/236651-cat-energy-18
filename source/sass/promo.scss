@@ -1,0 +1,28 @@
+.promo__content {
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-bottom: 155px;
+  padding-left: 30px;
+
+  font-family: $main-font;
+  color: $title-color;
+  text-align: center;
+
+  background: $main-color url("../img/index-background-mobile@1x.jpg") center bottom no-repeat;
+}
+
+.promo__slogan {
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.promo__wrapper {
+  @include side-indents;
+  padding-top: 130px;
+  padding-bottom: 20px;
+  text-align: center;
+}

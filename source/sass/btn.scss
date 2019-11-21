@@ -1,0 +1,24 @@
+.btn {
+  @include side-indents;
+  display: block;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 11px;
+
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $btn-text;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $main-color;
+  border: none;
+}
+
+.btn--more {
+  color: $text-color;
+  background-color: $bg-color;
+}

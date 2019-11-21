@@ -1,0 +1,21 @@
+.product {
+  @include side-indents;
+  padding-bottom: 25px;
+  border-top: 1px solid $bg-color;
+}
+
+.product__title {
+  @include subtitle;
+  margin: 0;
+}
+
+.product__name {
+  text-decoration: none;
+}
+
+.product__info {
+  @include text;
+  font-size: 12px;
+  line-height: 16px;
+  border-collapse: collapse;
+}
