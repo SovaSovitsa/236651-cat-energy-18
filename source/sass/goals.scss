@@ -38,3 +38,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.goals__hidden-title {
+  @include visually-hidden;
+}

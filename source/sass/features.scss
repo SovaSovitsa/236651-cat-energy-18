@@ -23,3 +23,7 @@
   @include text;
   line-height: 18px;
 }
+
+.features__hidden-title {
+  @include visually-hidden;
+}

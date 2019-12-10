@@ -49,3 +49,7 @@
 .result__mode {
   @include subtitle;
 }
+
+.result__hidden-title {
+  @include visually-hidden;
+}
