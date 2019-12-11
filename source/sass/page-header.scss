@@ -1,9 +1,15 @@
 .page-header {
   @include side-indents;
   display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.page-header__wrapper {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
