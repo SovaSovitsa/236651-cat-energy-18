@@ -30,4 +30,32 @@
   color: $menu-color;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .menu__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu__item,
+  .menu__item:first-child {
+    border: none;
+  }
+
+  .menu__link {
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $names-color;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .menu__link--current {
+    border-bottom: 2px solid $main-color;
+  }
 }

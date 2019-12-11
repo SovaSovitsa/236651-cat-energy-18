@@ -7,3 +7,9 @@
   background: #ffffff url("../img/icon-mobile-menu.svg") center no-repeat;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+   .burger {
+     @include visually-hidden;
+   }
+}
