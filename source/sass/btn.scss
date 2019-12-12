@@ -32,3 +32,10 @@
 .btn--form {
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .btn--promo {
+    margin: 0;
+    margin-top: 30px;
+  }
+}

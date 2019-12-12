@@ -44,3 +44,44 @@
   height: 270px;
   background: url(../img/index-can-mobile@1x.png) center no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    justify-content: flex-start;
+    min-height: 850px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background: none;
+  }
+
+  .promo__text {
+    width: 500px;
+    padding-right: 0;
+    padding-left: 0;
+
+    color: $subtitle-color;
+    text-align: left;
+  }
+
+  .title--promo {
+    font-size: 60px;
+    line-height: 60px;
+    color: $subtitle-color;
+  }
+
+  .promo__wrapper {
+    padding: 0;
+    background: none;
+  }
+
+  .promo__wrapper:before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    display: block;
+    width: 650px;
+    height: 700px;
+    background: url(../img/index-can-tablet@1x.jpg) center no-repeat;
+    z-index: -1;
+  }
+}
