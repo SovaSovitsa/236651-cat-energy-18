@@ -60,3 +60,15 @@
     border-bottom: 2px solid $main-color;
   }
 }
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .menu__link {
+    font-size: 20px;
+    color: $title-color;
+  }
+
+  .menu__link--current {
+    border-bottom: 2px solid $title-color;
+  }
+}
