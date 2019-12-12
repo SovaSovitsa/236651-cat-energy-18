@@ -1,14 +1,21 @@
-.promo__content {
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 500px;
   padding-top: 28px;
-  padding-right: 30px;
-  padding-bottom: 155px;
-  padding-left: 30px;
 
   font-family: $main-font;
   color: $title-color;
   text-align: center;
 
-  background: $promo-bg url("../img/index-background-mobile@1x.jpg") center bottom no-repeat;
+  background: $promo-bg url("../img/index-background-mobile@1x.jpg") center top no-repeat;
+}
+
+.promo__text {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .promo__slogan {
@@ -21,8 +28,6 @@
 }
 
 .promo__wrapper {
-  @include side-indents;
-  padding-top: 130px;
-  padding-bottom: 20px;
-  text-align: center;
+  background: $bg-usual;
+  padding-top: 138px;
 }

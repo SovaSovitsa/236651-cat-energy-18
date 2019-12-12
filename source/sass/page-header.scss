@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
+
 }
 
 .page-header__wrapper {
@@ -11,7 +12,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,7 +21,8 @@
     align-items: center;
   }
 
-  .page-header__wrapper {
+  .page-header {
+    padding-top: 0;
     padding-bottom: 0;
   }
 }

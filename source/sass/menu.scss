@@ -1,7 +1,8 @@
-.menu {
-  /*@include visually-hidden;*/
+@media (max-width: $tablet-width) {
+  .menu {
+    @include visually-hidden;
+  }
 }
-
 .menu__list {
   @include list;
   text-align: center;
