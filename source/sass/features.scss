@@ -4,6 +4,7 @@
 
 .features__subtitle {
   margin: 0;
+  margin-bottom: 45px;
   font-family: $main-font;
   font-size: 36px;
   line-height: 60px;
@@ -13,10 +14,26 @@
 
 .features__list {
   @include list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .features__item {
+  position: relative;
   padding-left: 80px;
+  margin-bottom: 25px;
+}
+
+.features__item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: $main-color;
 }
 
 .features__desc {
@@ -26,4 +43,67 @@
 
 .features__hidden-title {
   @include visually-hidden;
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .features__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 45%;
+    min-height: 260px;
+    padding-top: 130px;
+    padding-left: 0;
+    padding-right: 100px;
+    padding-bottom: 60px;
+  }
+
+  .features__item:before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .features__item:after {
+    position: absolute;
+    content: "1";
+    top: -25px;
+    left: 200px;
+    display: block;
+    width: 100px;
+    height: 100%;
+    font-family: $main-font;
+    font-size: 281px;
+    line-height: 281px;
+    color: $bg-color;
+    z-index: -1;
+  }
+
+  .features__desc {
+    width: 240px;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .features__list {
+    flex-wrap: nowrap;
+  }
+
+  .features__item {
+    width: 25%;
+    min-height: 260px;
+    padding-top: 130px;
+    padding-left: 0;
+    padding-right: 100px;
+    padding-bottom: 60px;
+  }
+
+  .features__item:after {
+    left: 130px;
+  }
 }
