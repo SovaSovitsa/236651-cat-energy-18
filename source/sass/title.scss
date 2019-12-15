@@ -1,4 +1,5 @@
 .title {
+  margin-top: 0;
   font-family: $main-font;
   font-size: 36px;
   font-weight: normal;
@@ -7,8 +8,11 @@
 }
 
 .title--catalog {
+  @include side-indents;
   line-height: 60px;
   color: $subtitle-color;
+  border-top: 1px solid #e6e6e6;
+  margin-bottom: 10px;
 }
 
 .title--form {

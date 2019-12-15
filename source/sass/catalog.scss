@@ -1,18 +1,44 @@
+.catalog__hidden-title {
+  @include visually-hidden;
+}
+
 .catalog__list {
   @include list;
 }
 
 .catalog__more {
-  @include side-indents;
+  padding-top: 25px;
+  padding-bottom: 30px;
   text-align: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__wrapper {
+  @include side-indents;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+}
+
+.catalog__plus {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  background: url("../img/icon-plus-mobile.svg") center no-repeat;
 }
 
 .catalog__show {
   @include subtitle;
+  margin-bottom: 5px;
 }
 
 .catalog__comment {
   @include text;
+  margin-top: 5px;
   font-size: 12px;
   line-height: 16px;
 }
+

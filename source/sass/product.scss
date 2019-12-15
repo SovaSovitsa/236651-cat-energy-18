@@ -1,12 +1,28 @@
 .product {
   @include side-indents;
   padding-bottom: 25px;
-  border-top: 1px solid $bg-color;
+  border-bottom: 1px solid #ededed;
+}
+
+.product:first-child {
+  border-top: 1px solid #ededed;
+}
+
+.product__card {
+  display: flex;
 }
 
 .product__title {
   @include subtitle;
+  width: 85px;
   margin: 0;
+  margin-bottom: 15px;
+}
+
+.product__desc {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .product__name {
@@ -15,7 +31,13 @@
 
 .product__info {
   @include text;
+  width: 100%;
   font-size: 12px;
   line-height: 16px;
   border-collapse: collapse;
+}
+
+.product__property {
+  display: flex;
+  justify-content: space-between;
 }
