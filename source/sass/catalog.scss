@@ -17,3 +17,11 @@
     justify-content: space-between;
   }
 }
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

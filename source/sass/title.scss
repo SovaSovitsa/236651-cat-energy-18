@@ -26,3 +26,9 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .title--catalog {
+    padding-left: 55px;
+  }
+}
