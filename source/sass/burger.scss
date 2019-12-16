@@ -9,7 +9,7 @@
 }
 
 @media (min-width: $tablet-width) {
-   .burger {
-     @include visually-hidden;
-   }
+  .burger {
+    @include visually-hidden;
+  }
 }
