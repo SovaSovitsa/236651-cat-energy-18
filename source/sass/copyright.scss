@@ -11,7 +11,7 @@
   color: inherit;
 }
 
-.copyright:after {
+.copyright::after {
   content: "";
   position: absolute;
   right: 0;
@@ -30,7 +30,7 @@
     padding-right: 50px;
   }
 
-  .copyright:after {
+  .copyright::after {
     top: -10px;
   }
 }

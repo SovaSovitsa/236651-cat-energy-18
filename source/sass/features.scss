@@ -25,7 +25,7 @@
   margin-bottom: 25px;
 }
 
-.features__item:before {
+.features__item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -62,12 +62,12 @@
     padding-bottom: 60px;
   }
 
-  .features__item:before {
+  .features__item::before {
     width: 80px;
     height: 80px;
   }
 
-  .features__item:after {
+  .features__item::after {
     position: absolute;
     content: "1";
     top: -25px;
@@ -102,7 +102,7 @@
     padding-bottom: 60px;
   }
 
-  .features__item:after {
+  .features__item::after {
     left: 130px;
   }
 }
