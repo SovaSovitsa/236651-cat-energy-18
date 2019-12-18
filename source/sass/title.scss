@@ -7,16 +7,16 @@
   color: $title-color;
 
   &--catalog {
-  @include side-indents;
-  line-height: 60px;
-  color: $subtitle-color;
-  border-top: 1px solid $product-border;
-  margin-bottom: 10px;
+    @include side-indents;
+    line-height: 60px;
+    color: $subtitle-color;
+    border-top: 1px solid $product-border;
+    margin-bottom: 10px;
   }
 
   &--form {
-  line-height: 60px;
-  color: $subtitle-color;
+    line-height: 60px;
+    color: $subtitle-color;
   }
 }
 
