@@ -1,7 +1,3 @@
-.catalog__hidden-title {
-  @include visually-hidden;
-}
-
 .catalog__list {
   @include list;
 }

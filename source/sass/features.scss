@@ -41,10 +41,6 @@
   line-height: 18px;
 }
 
-.features__hidden-title {
-  @include visually-hidden;
-}
-
 /*Планшет*/
 @media (min-width: $tablet-width) {
   .features__list {

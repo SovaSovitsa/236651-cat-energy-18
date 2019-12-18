@@ -40,10 +40,6 @@
   text-decoration: none;
 }
 
-.goals__hidden-title {
-  @include visually-hidden;
-}
-
 /*Планшет*/
 @media (min-width: $tablet-width) {
   .goals__item {
