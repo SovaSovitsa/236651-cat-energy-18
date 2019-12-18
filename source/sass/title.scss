@@ -6,12 +6,6 @@
   line-height: 36px;
   color: $title-color;
 
-  &--promo {
-  font-size: 60px;
-  line-height: 60px;
-  color: $subtitle-color;
-  }
-
   &--catalog {
   @include side-indents;
   line-height: 60px;
@@ -30,6 +24,12 @@
   .title--catalog {
     border: none;
   }
+
+  .title--promo {
+    font-size: 60px;
+    line-height: 60px;
+    color: $subtitle-color;
+    }
 }
 
 @media (min-width: $desktop-width) {

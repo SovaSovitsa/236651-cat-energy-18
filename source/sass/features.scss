@@ -60,6 +60,7 @@
     padding-left: 0;
     padding-right: 100px;
     padding-bottom: 60px;
+    counter-reset: list;
   }
 
   .features__item::before {
@@ -69,7 +70,8 @@
 
   .features__item::after {
     position: absolute;
-    content: "1";
+    counter-increment: list + 1;
+    content: counter(heading);
     top: -25px;
     left: 200px;
     display: block;
