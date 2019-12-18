@@ -55,10 +55,10 @@
     color: $names-color;
     text-transform: uppercase;
     text-decoration: none;
-  }
 
-  .menu__link--current {
+    &--current {
     border-bottom: 2px solid $main-color;
+    }
   }
 }
 
@@ -67,9 +67,9 @@
   .menu__link {
     font-size: 20px;
     color: $title-color;
-  }
 
-  .menu__link--current {
+  &--current {
     border-bottom: 2px solid $title-color;
+    }
   }
 }

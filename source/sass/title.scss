@@ -5,21 +5,26 @@
   font-weight: normal;
   line-height: 36px;
   color: $title-color;
-}
 
-.title--catalog {
+  &--promo {
+  font-size: 60px;
+  line-height: 60px;
+  color: $subtitle-color;
+  }
+
+  &--catalog {
   @include side-indents;
   line-height: 60px;
   color: $subtitle-color;
   border-top: 1px solid #e6e6e6;
   margin-bottom: 10px;
-}
+  }
 
-.title--form {
+  &--form {
   line-height: 60px;
   color: $subtitle-color;
+  }
 }
-
 
 @media (min-width: $tablet-width) {
   .title--catalog {
