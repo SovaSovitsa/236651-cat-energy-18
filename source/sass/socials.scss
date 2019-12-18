@@ -5,11 +5,11 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $logo-border;
 }
 
 .socials__item {
-  background: #858585;
+  background: $temp;
   width: 30px;
   height: 30px;
   margin-right: 15px;
