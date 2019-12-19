@@ -3,35 +3,36 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="page-header">
-        <a class="logo" href="index.html" aria-label="Ссылка на главную">
-            <img src="https://via.placeholder.com/33x38" alt="Логотип магазина Cat Energy" width="33" height="38">
-        </a>
-        <a class="logo-caption" href="index.html" aria-label="Ссылка на главную">
-            <img src="https://via.placeholder.com/101x18" alt="Логотип магазина Cat Energy" width="101" height="18">
-        </a>
-        <button class="burger" aria-label="Открыть главное меню"></button>
+        <div class="page-header__wrapper">
+          <a class="logo" href="index.html" aria-label="Ссылка на главную">
+              <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="200" height="40">
+          </a>
+          <button class="burger" aria-label="Открыть главное меню"></button>
+        </div>
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="index.html">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link">Подбор программы</a>
-                </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--current" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link">Подбор программы</a>
+              </li>
             </ul>
         </nav>
-    </header>
+      </header>
     <!-- Основная часть -->
     <main>
+      <!-- следующее задание -->
         <h1 class="title title--form">Подбор программы</h1>
         <form class="plan" method="post" action="https://echo.htmlacademy.ru">
             <h2 class="visually-hidden">Анкета для подбора программы кошачьего питания</h2>
@@ -108,40 +109,43 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-        <div class="address">
-            <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-            <address class="address__text">
-              ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
-            </address>
+        <!-- Следующее задание -->
+        <!--
+          <div class="address">
+              <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
+              <address class="address__text">
+                ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
+              </address>
+          </div>
+          <div class="map">
+              <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
+          </div>
+        -->
+        <div class="page-footer__info">
+          <a class="logo-caption" aria-label="Ссылка на главную">
+              <img src="https://via.placeholder.com/141x42" alt="Логотип магазина Cat Energy" width="141" height="42">
+          </a>
+          <!-- Иконки соцсетей -->
+          <ul class="socials">
+              <li class="socials__item">
+                  <a class="socials__btn" href="#" aria-label="Ссылка на ВК">
+                      <img class="socials__icon" src="https://via.placeholder.com/22x11" width="22" height="12" alt="Логотип ВК">
+                  </a>
+              </li>
+              <li class="socials__item">
+                  <a class="socials__btn" href="#" aria-label="Ссылка на Инстаграм">
+                      <img class="socials__icon" src="https://via.placeholder.com/16x16" width="16" height="16" alt="Логотип Инстаграма">
+                  </a>
+              </li>
+              <li class="socials__item">
+                  <a class="socials__btn" href="#" aria-label="Ссылка на Фейсбук">
+                      <img class="socials__icon" src="https://via.placeholder.com/10x19" width="10" height="19" alt="Логотип Фейсбука">
+                  </a>
+              </li>
+          </ul>
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
-        <div class="map">
-            <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
-        </div>
-        <a class="logo-caption" href="index.html" aria-label="Ссылка на главную">
-            <img src="https://via.placeholder.com/101x18" alt="Логотип магазина Cat Energy" width="101" height="18">
-        </a>
-        <!-- Иконки соцсетей -->
-        <ul class="socials">
-            <li class="socials__item">
-                <a class="socials__btn" href="#" aria-label="Ссылка на ВК">
-                    <img class="socials__icon" src="https://via.placeholder.com/22x11" width="22" height="12" alt="Логотип ВК">
-                </a>
-            </li>
-            <li class="socials__item">
-                <a class="socials__btn" href="#" aria-label="Ссылка на Инстаграм">
-                    <img class="socials__icon" src="https://via.placeholder.com/16x16" width="16" height="16" alt="Логотип Инстаграма">
-                </a>
-            </li>
-            <li class="socials__item">
-                <a class="socials__btn" href="#" aria-label="Ссылка на Фейсбук">
-                    <img class="socials__icon" src="https://via.placeholder.com/10x19" width="10" height="19" alt="Логотип Фейсбука">
-                </a>
-            </li>
-        </ul>
-        <div class="copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-    </footer>
+      </footer>
 </body>
 
 </html>

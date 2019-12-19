@@ -1,10 +1,36 @@
 .copyright {
-  @include side-indents;
-}
-
-.copyright__link {
-  @include text;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+}
+
+.copyright:visited {
+  color: inherit;
+}
+
+.copyright::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: $temp;
+}
+
+/*Планшет и десктоп*/
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 50px;
+  }
+
+  .copyright::after {
+    top: -10px;
+  }
 }

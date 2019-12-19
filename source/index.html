@@ -3,44 +3,44 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="page-header">
+      <div class="page-header__wrapper">
         <a class="logo" href="index.html" aria-label="Ссылка на главную">
-            <img src="https://via.placeholder.com/33x38" alt="Логотип магазина Cat Energy" width="33" height="38">
-        </a>
-        <a class="logo-caption" href="index.html" aria-label="Ссылка на главную">
-            <img src="https://via.placeholder.com/101x18" alt="Логотип магазина Cat Energy" width="101" height="18">
+            <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="200" height="40">
         </a>
         <button class="burger" aria-label="Открыть главное меню"></button>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="form.html">Подбор программы</a>
-                </li>
-            </ul>
-        </nav>
+      </div>
+      <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--current">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+      </nav>
     </header>
     <!-- Основная часть -->
     <main>
         <!-- Блок с кнопкой перехода к программе питания -->
         <div class="promo">
-            <div class="promo__content">
-                <h1 class="title">Функциональное питание для котов</h1>
-                <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            </div>
-            <div class="promo__wrapper">
-                <a class="btn" href="form.html">Подобрать программу</a>
-            </div>
+          <div class="promo__text">
+            <h1 class="title title--promo">Функциональное питание для котов</h1>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="promo__wrapper">
+            <a class="btn btn--promo" href="form.html">Подобрать программу</a>
+          </div>
         </div>
         <!-- Блок со ссылками на разные каталоги -->
         <section class="goals">
@@ -80,6 +80,8 @@
             </ul>
         </div>
         <!-- Блок о результатах -->
+        <!-- Следующее задание -->
+        <!--
         <div class="result">
             <h2 class="visually-hidden">История котовьего успеха</h2>
             <p class="result__title">Живой пример</p>
@@ -112,9 +114,12 @@
                 </div>
             </div>
         </div>
+      -->
       </main>
     <!-- Футер -->
     <footer class="page-footer">
+      <!-- Следующее задание -->
+      <!--
         <div class="address">
             <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
             <address class="address__text">
@@ -124,8 +129,10 @@
         <div class="map">
             <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
         </div>
+      -->
+      <div class="page-footer__info">
         <a class="logo-caption" aria-label="Ссылка на главную">
-            <img src="https://via.placeholder.com/101x18" alt="Логотип магазина Cat Energy" width="101" height="18">
+            <img src="https://via.placeholder.com/141x42" alt="Логотип магазина Cat Energy" width="141" height="42">
         </a>
         <!-- Иконки соцсетей -->
         <ul class="socials">
@@ -145,9 +152,8 @@
                 </a>
             </li>
         </ul>
-        <div class="copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </footer>
 
 </body>

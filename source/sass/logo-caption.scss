@@ -1,4 +1,15 @@
-/*Тревис ругается на пустые файлы*/
 .logo-caption {
-  display: block;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $logo-border;
+}
+
+
+/*Планшет и десктоп*/
+@media (min-width: $tablet-width) {
+  .logo-caption {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }

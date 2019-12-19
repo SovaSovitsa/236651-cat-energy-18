@@ -1,4 +1,24 @@
-/*Тревис ругается на пустые файлы*/
 .page-header {
-  display: block;
+  @include side-indents;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

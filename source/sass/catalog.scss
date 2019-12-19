@@ -2,17 +2,22 @@
   @include list;
 }
 
-.catalog__more {
-  @include side-indents;
-  text-align: center;
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.catalog__show {
-  @include subtitle;
-}
-
-.catalog__comment {
-  @include text;
-  font-size: 12px;
-  line-height: 16px;
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

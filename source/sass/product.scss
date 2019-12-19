@@ -1,12 +1,37 @@
 .product {
   @include side-indents;
   padding-bottom: 25px;
-  border-top: 1px solid $bg-color;
+  border-bottom: 1px solid $bottom-borders;
+
+  &--more {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid $bottom-borders;
+  }
+}
+
+.product:first-child {
+  border-top: 1px solid $bottom-borders;
+}
+
+.product__card {
+  display: flex;
 }
 
 .product__title {
   @include subtitle;
+  width: 85px;
   margin: 0;
+  margin-bottom: 15px;
+}
+
+.product__desc {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .product__name {
@@ -15,7 +40,105 @@
 
 .product__info {
   @include text;
+  width: 100%;
   font-size: 12px;
   line-height: 16px;
   border-collapse: collapse;
+}
+
+.product__property {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__plus {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  background: url("../img/icon-plus-mobile.svg") center no-repeat;
+}
+
+.product__container {
+  @include side-indents;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+}
+
+.product__show {
+  @include subtitle;
+  margin-bottom: 5px;
+}
+
+.product__comment {
+  @include text;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .product {
+    width: 320px;
+    margin-bottom: 140px;
+    border: none;
+    background: $bg-color;
+
+    &--more {
+      padding-top: 55px;
+      padding-bottom: 25px;
+      background: none;
+      border: 1px solid $product-border;
+    }
+  }
+
+  .product__card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product__title {
+    @include subtitle;
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .product__desc {
+    font-size: 16px;
+  }
+
+  .product__property {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $table-border;
+  }
+
+  .product__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .product__plus {
+    margin-bottom: 50px;
+  }
+
+  .product__comment {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
 }

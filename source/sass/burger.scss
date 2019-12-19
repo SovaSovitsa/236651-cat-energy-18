@@ -1,4 +1,15 @@
-/*Тревис ругается на пустые файлы*/
 .burger {
-  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: $bg-usual url("../img/icon-mobile-menu.svg") center no-repeat;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .burger {
+    display: none;
+  }
 }

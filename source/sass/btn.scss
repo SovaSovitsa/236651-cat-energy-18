@@ -1,7 +1,7 @@
 .btn {
   @include side-indents;
   display: block;
-  width: 100%;
+
   padding-top: 13px;
   padding-bottom: 11px;
 
@@ -16,13 +16,26 @@
 
   background-color: $main-color;
   border: none;
+
+  &--promo {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  &--more {
+    color: $text-color;
+    background-color: $bg-color;
+  }
+
+  &--form {
+    margin-bottom: 15px;
+  }
 }
 
-.btn--more {
-  color: $text-color;
-  background-color: $bg-color;
-}
-
-.btn--form {
-  margin-bottom: 15px;
+@media (min-width: $tablet-width) {
+  .btn--promo {
+    margin: 0;
+    margin-top: 30px;
+  }
 }
