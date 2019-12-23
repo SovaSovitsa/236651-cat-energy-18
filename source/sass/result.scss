@@ -58,12 +58,12 @@
 
 .result__value {
   position: relative;
-  min-width: 120px;
+  width: 125px;
   text-align: center;
   padding-top: 18px;
-  padding-right: 25px;
+  padding-right: 20px;
   padding-bottom: 18px;
-  padding-left: 25px;
+  padding-left: 20px;
   border: 1px solid $table-border;
 }
 
@@ -81,5 +81,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+
+@media (min-width: $tablet-width) {
+  .result__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .result__value:first-child {
+    margin-right: 40px;
+  }
+
+  .result__value {
+    width: 130px;
+  }
+
+  .result__criterion {
+    width: 120px;
+    margin-left: -60px;
+    bottom: -5px;
+  }
+
+  .result__price {
+    width: 130px;
+    text-align: right;
+  }
 }
