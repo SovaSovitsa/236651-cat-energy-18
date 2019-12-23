@@ -1,12 +1,17 @@
 .address {
   @include side-indents;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: $address-bg;
 }
 
 .address__title {
   @include subtitle;
+  width: 130px;
 }
 
 .address__text {
   @include text;
+  width: 150px;
 }
