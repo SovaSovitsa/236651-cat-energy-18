@@ -47,6 +47,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    counter-reset: list;
   }
 
   .features__item {
@@ -56,7 +58,6 @@
     padding-left: 0;
     padding-right: 100px;
     padding-bottom: 60px;
-    counter-reset: list;
   }
 
   .features__item::before {
@@ -65,9 +66,9 @@
   }
 
   .features__item::after {
+    counter-increment: list;
+    content: counter(list);
     position: absolute;
-    counter-increment: list + 1;
-    content: counter(heading);
     top: -25px;
     left: 200px;
     display: block;
