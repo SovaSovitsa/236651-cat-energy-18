@@ -74,6 +74,50 @@
   text-align: center;
 }
 
-.plan__wrapper {
+.plan__container {
   @include side-indents;
+}
+
+@media (min-width: $tablet-width) {
+  .plan {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .plan__desc {
+    padding: 0;
+  }
+
+  .plan__part {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: none;
+
+    &--goals {
+      border: 1px solid $product-border;
+    }
+  }
+
+ .plan__add {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+ }
+
+ .plan__label--add {
+   width: 50%;
+ }
+
+  .plan__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+
+  .plan__note {
+    margin-left: 40px;
+  }
 }

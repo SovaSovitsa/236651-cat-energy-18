@@ -39,10 +39,17 @@
     margin: 0;
     margin-top: 30px;
   }
+
+  .btn--form {
+    width: 280px;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .btn--other {
     width: 245px;
   }
+
+
 }

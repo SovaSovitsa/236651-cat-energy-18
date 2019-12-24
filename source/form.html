@@ -86,24 +86,26 @@
             <!-- Дополнительные товары -->
             <fieldset class="plan__part">
                 <legend class="plan__title">Дополнительно</legend>
-                <label class="plan__label">
+                <div class="plan__add">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-sugar" value="sugar">
                   Сахарозаменитель
                 </label>
-                <label class="plan__label">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-water" value="water">
                   Питьевая вода
                 </label>
-                <label class="plan__label">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-milk" value="milk">
                   Молоко
                 </label>
-                <label class="plan__label">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-pills" value="pills">
                   Витамины
                 </label>
+              </div>
             </fieldset>
-            <div class="plan__wrapper">
+            <div class="plan__container">
               <button class="btn btn--form" type="submit">Отправить заявку</button>
               <span class="plan__note">* &mdash; Обязательные поля</span>
             </div>
