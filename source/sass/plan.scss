@@ -121,3 +121,42 @@
     margin-left: 40px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .plan__desc {
+    width: 250px;
+  }
+
+  .plan__part--base {
+    width: 47%;
+    padding: 0;
+  }
+
+  .plan__part--base .plan__label:last-child {
+    margin-bottom: 0;
+  }
+
+  .plan__part--goals {
+    width: 47%;
+  }
+
+  .plan__top-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plan__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan__part--contacts .plan__label {
+    width: 47%;
+  }
+
+  .plan__add {
+    flex-wrap: nowrap;
+  }
+}
