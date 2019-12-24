@@ -1,6 +1,9 @@
 .result {
-  @include side-indents;
   background-color: $bg-color;
+}
+
+.result__content {
+  @include side-indents;
 }
 
 .result__title {
@@ -85,6 +88,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .result {
+    background-color: $bg-usual;
+  }
+
   .result__container {
     display: flex;
     justify-content: space-between;
@@ -104,10 +111,71 @@
     width: 120px;
     margin-left: -60px;
     bottom: -5px;
+    background-color: $bg-usual;
   }
 
   .result__price {
     width: 130px;
     text-align: right;
+  }
+
+  .result__slider {
+    margin-top: 120px;
+    padding-bottom: 20px;
+    background-color: $bg-color;
+  }
+
+  .result__wrapper {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .result__title {
+    padding-left: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .result__content {
+    width: 400px;
+    background-color: $bg-color;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .result__slider {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+
+  .result__story {
+    margin-bottom: 50px;
+  }
+
+  .result__criterion {
+    background-color: $bg-color;
+  }
+
+  .result__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result__info {
+    width: 100%;
+  }
+
+  .result__price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 40px;
   }
 }
