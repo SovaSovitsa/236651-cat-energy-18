@@ -39,3 +39,9 @@
     margin-top: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .btn--other {
+    width: 245px;
+  }
+}

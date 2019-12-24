@@ -9,7 +9,6 @@
   line-height: 24px;
   font-weight: normal;
   color: $subtitle-color;
-  border-bottom: 1px solid $bg-color;
 }
 
 .other__list {
@@ -20,6 +19,10 @@
   padding-top: 16px;
   padding-bottom: 17px;
   border-bottom: 1px solid $bg-color;
+}
+
+.other__item:first-child {
+  border-top: 1px solid $bg-color;
 }
 
 .other__name {
@@ -69,5 +72,40 @@
 
   .other__item:last-child {
     margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other__title {
+    width: 100%;
+  }
+
+  .other__list {
+    width: 850px;
+  }
+
+  .other__item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+ .other__item:last-child {
+   margin-bottom: 0;
+ }
+
+  .other__name {
+    width: 245px;
+  }
+
+  .other__info {
+    text-align: left;
+  }
+
+  .other__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
