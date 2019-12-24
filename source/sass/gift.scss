@@ -1,8 +1,6 @@
 .gift {
   padding-left: 50px;
   padding-right: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 160px;
   padding-bottom: 30px;
   background: $promo-bg url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
@@ -14,4 +12,23 @@
   line-height: 20px;
   color: $title-color;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    padding: 10px;
+    margin: 0;
+    min-height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    background: url(../img/gift-photo-tablet@1x.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .gift__text {
+    width: 150px;
+    text-align: left;
+    margin-top: 70px;
+    margin-right: 120px;
+  }
 }

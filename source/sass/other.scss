@@ -3,7 +3,6 @@
 }
 
 .other__title {
-  padding-top: 30px;
   padding-bottom: 30px;
   font-family: $main-font;
   font-size: 24px;
@@ -35,8 +34,40 @@
 
 .other__info {
   @include text;
+  width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 14px;
   border-collapse: collapse;
+}
+
+.other__pack {
+  width: 50%;
+}
+
+.other__price {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .other__title {
+    padding-bottom: 70px;
+    margin: 0;
+    margin-top: -30px;
+  }
+
+  .other__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .other__info {
+    width: 250px;
+    text-align: right;
+  }
+
+  .other__item:last-child {
+    margin-bottom: 80px;
+  }
 }
