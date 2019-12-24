@@ -1,30 +1,50 @@
 .plan {
-  @include side-indents;
   padding-bottom: 30px;
 }
 
 .plan__desc {
+  @include side-indents;
   @include subtitle;
   font-size: 14px;
   line-height: 18px;
 }
 
 .plan__part {
+  @include side-indents;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
   border: none;
+
+  &--base {
+    border-bottom: 1px solid $product-border;
+  }
+
+  &--goals {
+    border-bottom: 1px solid $product-border;
+  }
+
+  &--contacts {
+    margin-top: 30px;
+  }
 }
 
 .plan__label {
   @include subtitle;
+  display: flex;
+  align-items: center;
   line-height: 18px;
+  margin-bottom: 15px;
 }
 
 .plan__field {
   @include subtitle;
+  flex-grow: 1;
   padding: 11px 15px;
-  margin-bottom: 15px;
   line-height: 18px;
+  margin-left: 12px;
 }
 
 .plan__title {
@@ -36,7 +56,14 @@
 
 .plan__comment {
   @include subtitle;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
   line-height: 18px;
+  border: 1px solid $product-border;
 }
 
 .plan__note {
@@ -45,4 +72,8 @@
   margin: 0 auto;
   line-height: 16px;
   text-align: center;
+}
+
+.plan__wrapper {
+  @include side-indents;
 }

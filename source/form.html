@@ -38,7 +38,7 @@
             <h2 class="visually-hidden">Анкета для подбора программы кошачьего питания</h2>
             <p class="plan__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <!-- Данные кота -->
-            <fieldset class="plan__part">
+            <fieldset class="plan__part plan__part--base">
                 <legend class="visually-hidden">Данные вашего кота</legend>
                 <label class="plan__label">Имя:*
                   <input class="plan__field" type="text" name="cat-name" id="cat-name" plaseholder="Барсик">
@@ -51,7 +51,7 @@
                 </label>
             </fieldset>
             <!-- Цель программы -->
-            <fieldset class="plan__part">
+            <fieldset class="plan__part plan__part--goals">
                 <legend class="visually-hidden">Цель программы питания</legend>
                 <label class="plan__label">
                   <input class="plan__radio" type="radio" name="goals" id="plan-slim" value="slim">
@@ -67,7 +67,7 @@
                 </label>
             </fieldset>
             <!-- Контакты хозяина -->
-            <fieldset class="plan__part">
+            <fieldset class="plan__part plan__part--contacts">
                 <legend class="plan__title">Контактные данные (владельца кота)</legend>
                 <div class="plan__wrapper">
                     <label class="plan__label">E-mail:*
@@ -103,15 +103,15 @@
                   Витамины
                 </label>
             </fieldset>
-            <button class="btn btn--form" type="submit">Отправить заявку</button>
-            <span class="plan__note">* &mdash; Обязательные поля</span>
+            <div class="plan__wrapper">
+              <button class="btn btn--form" type="submit">Отправить заявку</button>
+              <span class="plan__note">* &mdash; Обязательные поля</span>
+            </div>
         </form>
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-        <!-- Следующее задание -->
-        <!--
-          <div class="address">
+          <div class="address address--form">
               <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
               <address class="address__text">
                 ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
@@ -120,7 +120,6 @@
           <div class="map">
               <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
           </div>
-        -->
         <div class="page-footer__info">
           <a class="logo-caption" aria-label="Ссылка на главную">
               <img src="https://via.placeholder.com/141x42" alt="Логотип магазина Cat Energy" width="141" height="42">
