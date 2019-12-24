@@ -24,19 +24,34 @@
 }
 
 .result__value {
+  position: relative;
+  width: 125px;
+  text-align: center;
+  padding-top: 18px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+  padding-left: 20px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: $subtitle-color;
   text-transform: uppercase;
+  border: 1px solid $table-border;
 }
 
 .result__criterion {
   @include text;
+  position: absolute;
+  width: 65px;
+  text-align: center;
+  left: 50%;
+  margin-left: -30px;
+  bottom: -16px;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+  background-color: $bg-color;
 }
 
 .result__price {
@@ -57,27 +72,6 @@
 .result__info {
   display: flex;
   justify-content: space-between;
-}
-
-.result__value {
-  position: relative;
-  width: 125px;
-  text-align: center;
-  padding-top: 18px;
-  padding-right: 20px;
-  padding-bottom: 18px;
-  padding-left: 20px;
-  border: 1px solid $table-border;
-}
-
-.result__criterion {
-  position: absolute;
-  width: 65px;
-  text-align: center;
-  left: 50%;
-  margin-left: -30px;
-  bottom: -16px;
-  background-color: $bg-color;
 }
 
 .result__slider {
