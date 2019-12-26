@@ -19,3 +19,11 @@
   @include text;
   width: 150px;
 }
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: absolute;
+    top: 100px;
+    left: 130px;
+  }
+}
