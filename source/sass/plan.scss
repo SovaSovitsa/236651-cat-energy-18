@@ -122,6 +122,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .plan {
+    @include desktop-indents;
+  }
+
   .plan__desc {
     width: 250px;
   }

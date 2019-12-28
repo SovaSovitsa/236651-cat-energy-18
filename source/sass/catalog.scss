@@ -16,6 +16,10 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .catalog {
+    @include desktop-indents;
+  }
+
   .catalog__list {
     width: 1220px;
     margin: 0 auto;

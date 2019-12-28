@@ -35,6 +35,11 @@
 
 @media (min-width: $desktop-width) {
   .title--catalog {
-    padding-left: 55px;
+    padding: 0;
+  }
+
+  .title--form {
+    @include desktop-indents;
+    margin-left: 0;
   }
 }

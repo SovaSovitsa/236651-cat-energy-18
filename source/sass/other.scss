@@ -76,6 +76,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .other {
+    @include desktop-indents;
+  }
+
   .other__title {
     width: 100%;
   }
@@ -105,7 +109,7 @@
 
   .other__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
   }
 }

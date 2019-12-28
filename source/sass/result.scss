@@ -126,13 +126,13 @@
 
 @media (min-width: $desktop-width) {
   .result {
+    @include desktop-indents;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .result__title {
-    padding-left: 50px;
     width: 100%;
     margin-bottom: 30px;
   }

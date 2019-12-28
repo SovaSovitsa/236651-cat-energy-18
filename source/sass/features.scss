@@ -88,6 +88,10 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .features {
+    @include desktop-indents;
+  }
+
   .features__list {
     flex-wrap: nowrap;
   }

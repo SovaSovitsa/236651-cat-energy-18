@@ -74,10 +74,9 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .goals {
+    @include desktop-indents;
     flex-direction: row;
     justify-content: center;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 
   .goals__item {
