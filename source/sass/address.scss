@@ -1,12 +1,29 @@
 .address {
   @include side-indents;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: $address-bg;
+
+  &--form {
+    background-color: $bg-color;
+  }
 }
 
 .address__title {
   @include subtitle;
+  width: 130px;
 }
 
 .address__text {
   @include text;
+  width: 150px;
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: absolute;
+    top: 100px;
+    left: 130px;
+  }
 }

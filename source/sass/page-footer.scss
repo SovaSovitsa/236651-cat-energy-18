@@ -22,3 +22,11 @@
     padding-bottom: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include desktop-indents;
+    position: relative;
+    margin-top: 30px;
+  }
+}

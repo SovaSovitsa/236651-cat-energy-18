@@ -3,14 +3,12 @@
 }
 
 .other__title {
-  padding-top: 30px;
   padding-bottom: 30px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: $subtitle-color;
-  border-bottom: 1px solid $bg-color;
 }
 
 .other__list {
@@ -21,6 +19,10 @@
   padding-top: 16px;
   padding-bottom: 17px;
   border-bottom: 1px solid $bg-color;
+}
+
+.other__item:first-child {
+  border-top: 1px solid $bg-color;
 }
 
 .other__name {
@@ -35,8 +37,79 @@
 
 .other__info {
   @include text;
+  width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 14px;
   border-collapse: collapse;
+}
+
+.other__pack {
+  width: 50%;
+}
+
+.other__price {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .other__title {
+    padding-bottom: 70px;
+    margin: 0;
+    margin-top: -30px;
+  }
+
+  .other__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .other__info {
+    width: 250px;
+    text-align: right;
+  }
+
+  .other__item:last-child {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other {
+    @include desktop-indents;
+  }
+
+  .other__title {
+    width: 100%;
+  }
+
+  .other__list {
+    width: 850px;
+  }
+
+  .other__item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .other__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .other__name {
+    width: 245px;
+  }
+
+  .other__info {
+    text-align: left;
+  }
+
+  .other__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }

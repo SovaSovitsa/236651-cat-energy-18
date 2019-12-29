@@ -1,30 +1,50 @@
 .plan {
-  @include side-indents;
   padding-bottom: 30px;
 }
 
 .plan__desc {
+  @include side-indents;
   @include subtitle;
   font-size: 14px;
   line-height: 18px;
 }
 
 .plan__part {
+  @include side-indents;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
   border: none;
+
+  &--base {
+    border-bottom: 1px solid $product-border;
+  }
+
+  &--goals {
+    border-bottom: 1px solid $product-border;
+  }
+
+  &--contacts {
+    margin-top: 30px;
+  }
 }
 
 .plan__label {
   @include subtitle;
+  display: flex;
+  align-items: center;
   line-height: 18px;
+  margin-bottom: 15px;
 }
 
 .plan__field {
   @include subtitle;
+  flex-grow: 1;
   padding: 11px 15px;
-  margin-bottom: 15px;
   line-height: 18px;
+  margin-left: 12px;
 }
 
 .plan__title {
@@ -36,7 +56,14 @@
 
 .plan__comment {
   @include subtitle;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
   line-height: 18px;
+  border: 1px solid $product-border;
 }
 
 .plan__note {
@@ -45,4 +72,93 @@
   margin: 0 auto;
   line-height: 16px;
   text-align: center;
+}
+
+.plan__container {
+  @include side-indents;
+}
+
+@media (min-width: $tablet-width) {
+  .plan {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .plan__desc {
+    padding: 0;
+  }
+
+  .plan__part {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: none;
+
+    &--goals {
+      border: 1px solid $product-border;
+    }
+  }
+
+  .plan__add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .plan__label--add {
+    width: 50%;
+  }
+
+  .plan__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+
+  .plan__note {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan {
+    @include desktop-indents;
+  }
+
+  .plan__desc {
+    width: 250px;
+  }
+
+  .plan__part--base {
+    width: 47%;
+    padding: 0;
+  }
+
+  .plan__part--base .plan__label:last-child {
+    margin-bottom: 0;
+  }
+
+  .plan__part--goals {
+    width: 47%;
+  }
+
+  .plan__top-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plan__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan__part--contacts .plan__label {
+    width: 47%;
+  }
+
+  .plan__add {
+    flex-wrap: nowrap;
+  }
 }

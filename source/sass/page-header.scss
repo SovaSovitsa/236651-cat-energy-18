@@ -22,3 +22,9 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include desktop-indents;
+  }
+}

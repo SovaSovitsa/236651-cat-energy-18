@@ -19,26 +19,26 @@
         <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link menu__link--current" href="index.html">Главная</a>
+                <a class="menu__link" href="index.html">Главная</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link">Подбор программы</a>
+                <a class="menu__link menu__link--current">Подбор программы</a>
               </li>
             </ul>
         </nav>
       </header>
     <!-- Основная часть -->
     <main>
-      <!-- следующее задание -->
         <h1 class="title title--form">Подбор программы</h1>
         <form class="plan" method="post" action="https://echo.htmlacademy.ru">
             <h2 class="visually-hidden">Анкета для подбора программы кошачьего питания</h2>
             <p class="plan__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <!-- Данные кота -->
-            <fieldset class="plan__part">
+            <div class="plan__top-wrap">
+            <fieldset class="plan__part plan__part--base">
                 <legend class="visually-hidden">Данные вашего кота</legend>
                 <label class="plan__label">Имя:*
                   <input class="plan__field" type="text" name="cat-name" id="cat-name" plaseholder="Барсик">
@@ -51,7 +51,7 @@
                 </label>
             </fieldset>
             <!-- Цель программы -->
-            <fieldset class="plan__part">
+            <fieldset class="plan__part plan__part--goals">
                 <legend class="visually-hidden">Цель программы питания</legend>
                 <label class="plan__label">
                   <input class="plan__radio" type="radio" name="goals" id="plan-slim" value="slim">
@@ -66,8 +66,9 @@
                   Не знаю (нужен ваш совет)
                 </label>
             </fieldset>
+          </div>
             <!-- Контакты хозяина -->
-            <fieldset class="plan__part">
+            <fieldset class="plan__part plan__part--contacts">
                 <legend class="plan__title">Контактные данные (владельца кота)</legend>
                 <div class="plan__wrapper">
                     <label class="plan__label">E-mail:*
@@ -86,32 +87,34 @@
             <!-- Дополнительные товары -->
             <fieldset class="plan__part">
                 <legend class="plan__title">Дополнительно</legend>
-                <label class="plan__label">
+                <div class="plan__add">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-sugar" value="sugar">
                   Сахарозаменитель
                 </label>
-                <label class="plan__label">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-water" value="water">
                   Питьевая вода
                 </label>
-                <label class="plan__label">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-milk" value="milk">
                   Молоко
                 </label>
-                <label class="plan__label">
+                <label class="plan__label plan__label--add">
                   <input class="plan__add" type="checkbox" name="add-items" id="add-pills" value="pills">
                   Витамины
                 </label>
+              </div>
             </fieldset>
-            <button class="btn btn--form" type="submit">Отправить заявку</button>
-            <span class="plan__note">* &mdash; Обязательные поля</span>
+            <div class="plan__container">
+              <button class="btn btn--form" type="submit">Отправить заявку</button>
+              <span class="plan__note">* &mdash; Обязательные поля</span>
+            </div>
         </form>
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-        <!-- Следующее задание -->
-        <!--
-          <div class="address">
+          <div class="address address--form">
               <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
               <address class="address__text">
                 ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
@@ -120,7 +123,6 @@
           <div class="map">
               <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
           </div>
-        -->
         <div class="page-footer__info">
           <a class="logo-caption" aria-label="Ссылка на главную">
               <img src="https://via.placeholder.com/141x42" alt="Логотип магазина Cat Energy" width="141" height="42">

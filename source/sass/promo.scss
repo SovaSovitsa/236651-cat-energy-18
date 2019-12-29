@@ -75,6 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    @include desktop-indents;
     position: relative;
     min-height: 580px;
   }

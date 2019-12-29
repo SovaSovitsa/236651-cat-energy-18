@@ -19,13 +19,13 @@
       <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link menu__link--current">Главная</a>
+              <a class="menu__link menu__link--main menu__link--current">Главная</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="catalog.html">Каталог продукции</a>
+              <a class="menu__link menu__link--main" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="form.html">Подбор программы</a>
+              <a class="menu__link menu__link--main" href="form.html">Подбор программы</a>
             </li>
           </ul>
       </nav>
@@ -80,56 +80,54 @@
             </ul>
         </div>
         <!-- Блок о результатах -->
-        <!-- Следующее задание -->
-        <!--
         <div class="result">
             <h2 class="visually-hidden">История котовьего успеха</h2>
             <p class="result__title">Живой пример</p>
-            <p class="result__story">
+            <div class="result__content">
+              <p class="result__story">
                 Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит 16 часов в день.
-            </p>
-            <div class="result__info">
-                <div class="result__value">
+              </p>
+              <div class="result__container">
+                <div class="result__info">
+                  <div class="result__value">
                     5 кг
-                    <span class="result__criterion">снижение веса</span>
-                </div>
-                <div class="result__value">
+                  <span class="result__criterion">снижение веса</span>
+                  </div>
+                  <div class="result__value">
                     60 дней
                     <span class="result__criterion">затрачено времени</span>
+                  </div>
                 </div>
+                <p class="result__price">
+                  <span>Затраты на питание:</span> <span></span>15 000 руб.</span>
+                </p>
+              </div>
             </div>
-            <p class="result__price">
-                Затраты на питание: 15 000 руб.
-            </p>
-            <div class="result__slider">
-                <div class="result__wrapper">
+          <div class="result__slider">
+            <div class="result__wrapper">
                     <img class="result__picture" src="https://via.placeholder.com/280x230" alt="Кот Борис до похудения" width="280" height="230">
-                    <img class="result__picture hidden" src="https://via.placeholder.com/280x230" alt="Похудевший кот Борис" width="280" height="230">
-                </div>
-                <div class="result__switch">
+                    <img class="result__picture visually-hidden" src="https://via.placeholder.com/280x230" alt="Похудевший кот Борис" width="280" height="230">
+            </div>
+            <div class="result__switch">
                     <span class="result__mode">Было</span>
                     <input class="result__toggle" type="checkbox" id="result__toggle" aria-label="Переключатель фотографий в слайдере">
                     <label class="result_label" for="result__toggle"></label>
                     <span class="result__mode">Стало</span>
-                </div>
             </div>
+          </div>
         </div>
-      -->
       </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <!-- Следующее задание -->
-      <!--
-        <div class="address">
-            <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-            <address class="address__text">
-              ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
-            </address>
-        </div>
-        <div class="map">
-            <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320" height="360">
-        </div>
-      -->
+      <div class="address">
+        <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <address class="address__text">
+          ул. Большая Конюшенная, д. 19/18 Санкт-Петербург
+        </address>
+      </div>
+      <div class="map">
+        <img class="map__image" src="https://via.placeholder.com/320x360" alt="ул. Большая Конюшенная, д. 19/18 на карте" width="320px" height="360">
+      </div>
       <div class="page-footer__info">
         <a class="logo-caption" aria-label="Ссылка на главную">
             <img src="https://via.placeholder.com/141x42" alt="Логотип магазина Cat Energy" width="141" height="42">

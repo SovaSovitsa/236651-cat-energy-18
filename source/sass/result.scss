@@ -1,6 +1,9 @@
 .result {
-  @include side-indents;
   background-color: $bg-color;
+}
+
+.result__content {
+  @include side-indents;
 }
 
 .result__title {
@@ -21,22 +24,38 @@
 }
 
 .result__value {
+  position: relative;
+  width: 125px;
+  text-align: center;
+  padding-top: 18px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+  padding-left: 20px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: $subtitle-color;
   text-transform: uppercase;
+  border: 1px solid $table-border;
 }
 
 .result__criterion {
   @include text;
+  position: absolute;
+  width: 65px;
+  text-align: center;
+  left: 50%;
+  margin-left: -30px;
+  bottom: -16px;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+  background-color: $bg-color;
 }
 
 .result__price {
+  margin-top: 25px;
   text-align: center;
   font-family: $main-font;
   font-size: 14px;
@@ -48,4 +67,109 @@
 
 .result__mode {
   @include subtitle;
+}
+
+.result__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .result {
+    background-color: $bg-usual;
+  }
+
+  .result__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .result__value:first-child {
+    margin-right: 40px;
+  }
+
+  .result__value {
+    width: 130px;
+  }
+
+  .result__criterion {
+    width: 120px;
+    margin-left: -60px;
+    bottom: -5px;
+    background-color: $bg-usual;
+  }
+
+  .result__price {
+    width: 130px;
+    text-align: right;
+  }
+
+  .result__slider {
+    margin-top: 120px;
+    padding-bottom: 20px;
+    background-color: $bg-color;
+  }
+
+  .result__wrapper {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result {
+    @include desktop-indents;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .result__title {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .result__content {
+    width: 400px;
+    background-color: $bg-color;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .result__slider {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+
+  .result__story {
+    margin-bottom: 50px;
+  }
+
+  .result__criterion {
+    background-color: $bg-color;
+  }
+
+  .result__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result__info {
+    width: 100%;
+  }
+
+  .result__price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 40px;
+  }
 }

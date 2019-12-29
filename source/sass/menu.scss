@@ -1,6 +1,6 @@
 @media (max-width: $tablet-width) {
   .menu {
-    @include hidden;
+    display: none;
   }
 }
 
@@ -64,12 +64,20 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  .menu__link {
+  .menu__list {
     font-size: 20px;
-    color: $title-color;
+    color: $subtitle-color;
 
     &--current {
-      border-bottom: 2px solid $title-color;
+      border-bottom: 2px solid $main-color;
     }
+  }
+
+  .menu__link--main {
+    color: $btn-text;
+  }
+
+  .menu__link--main.menu__link--current {
+    border-bottom: 2px solid $bg-usual;
   }
 }
