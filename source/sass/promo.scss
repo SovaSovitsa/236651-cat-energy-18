@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 500px;
+  min-height: 498px;
   padding-top: 28px;
   font-family: $main-font;
   color: $title-color;
@@ -18,21 +18,21 @@
 .promo__slogan {
   margin: 0 auto;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 15px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
 .promo__wrapper {
   position: relative;
-  padding-top: 140px;
+  padding-top: 134px;
   background: $bg-usual;
 }
 
 .promo__wrapper::before {
   content: "";
   position: absolute;
-  top: -130px;
+  top: -139px;
   display: block;
   width: 100%;
   height: 270px;

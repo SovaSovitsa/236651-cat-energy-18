@@ -1,10 +1,12 @@
 .features {
   @include side-indents;
+  margin-bottom: 32px;
 }
 
 .features__subtitle {
   margin: 0;
-  margin-bottom: 45px;
+  margin-top: 4px;
+  margin-bottom: 18px;
   font-family: $main-font;
   font-size: 36px;
   line-height: 60px;
@@ -22,7 +24,7 @@
 .features__item {
   position: relative;
   padding-left: 80px;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 }
 
 .features__item::before {
@@ -38,6 +40,8 @@
 
 .features__desc {
   @include text;
+  margin-bottom: 0;
+  margin-top: 13px;
   line-height: 18px;
 }
 

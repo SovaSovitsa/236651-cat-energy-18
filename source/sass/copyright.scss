@@ -5,6 +5,7 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  border-top: 1px solid $logo-border;
 }
 
 .copyright:visited {
@@ -14,12 +15,12 @@
 .copyright::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: 20px;
+  right: -6px;
+  top: 19px;
   display: block;
   width: 40px;
   height: 40px;
-  background: $temp;
+  background: url("../img/htmlacademy.svg") center no-repeat;
 }
 
 /*Планшет и десктоп*/

@@ -1,9 +1,7 @@
 .result {
-  background-color: $bg-color;
-}
-
-.result__content {
   @include side-indents;
+  padding-top: 17px;
+  background-color: $bg-color;
 }
 
 .result__title {
@@ -16,6 +14,9 @@
 }
 
 .result__story {
+  margin-top: 22px;
+  margin-bottom: 26px;
+  padding-right: 10px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -25,11 +26,11 @@
 
 .result__value {
   position: relative;
-  width: 125px;
+  width: 124px;
   text-align: center;
-  padding-top: 18px;
+  padding-top: 14px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   padding-left: 20px;
   font-family: $main-font;
   font-size: 24px;
@@ -43,10 +44,10 @@
 .result__criterion {
   @include text;
   position: absolute;
-  width: 65px;
+  width: 80px;
   text-align: center;
   left: 50%;
-  margin-left: -30px;
+  margin-left: -40px;
   bottom: -16px;
   font-size: 12px;
   line-height: 12px;
@@ -55,7 +56,8 @@
 }
 
 .result__price {
-  margin-top: 25px;
+  margin-top: 34px;
+  margin-bottom: 34px;
   text-align: center;
   font-family: $main-font;
   font-size: 14px;
@@ -78,6 +80,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 34px;
+}
+
+.result__wrapper {
+  margin-bottom: 29px;
 }
 
 
