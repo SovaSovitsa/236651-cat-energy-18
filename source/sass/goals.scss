@@ -15,6 +15,7 @@
 }
 
 .goals__title {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   padding-left: 70px;
@@ -26,6 +27,35 @@
   text-transform: uppercase;
 }
 
+.goals__title:before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: -6px;
+  display: block;
+  width: 51px;
+  height: 51px;
+  background-color: $main-color;
+  border-radius: 50%;
+}
+
+.goals__title:after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: -9px;
+  display: block;
+  width: 68px;
+  height: 51px;
+  background: url("../img/icon-cat-slim.svg") center no-repeat;
+}
+
+.goals__title--pro:after {
+  top: -6px;
+  left: -7px;
+  background: url("../img/icon-cat-pro.svg") center no-repeat;
+}
+
 .goals__desc {
   @include text;
   padding-right: 10px;
@@ -34,6 +64,10 @@
 }
 
 .goals__link {
+  position: relative;
+  display: block;
+  width: 90px;
+  min-height: 19px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
@@ -41,6 +75,17 @@
   color: $subtitle-color;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.goals__link:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 12px;
+  top: 2px;
+  right: -32px;
+  background: url("../img/icon-right-arrow-long.svg") center no-repeat;
 }
 
 /*Планшет*/
