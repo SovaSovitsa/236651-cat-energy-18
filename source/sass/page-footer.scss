@@ -12,17 +12,20 @@
   padding-top: 29px;
 }
 
-/*Планшет и десктоп*/
+/*Планшет*/
 @media (min-width: $tablet-width) {
   .page-footer__info {
+    @include tablet-indents;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 56px;
     padding-bottom: 60px;
   }
 }
 
+
+/*Десктоп*/
 @media (min-width: $desktop-width) {
   .page-footer {
     @include desktop-indents;

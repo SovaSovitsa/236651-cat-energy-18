@@ -2,3 +2,11 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  /*временные стили*/
+  .map {
+    height: 398px;
+    box-shadow: 0 0 1px 1px #000000 inset;
+  }
+}

@@ -23,6 +23,34 @@
   width: 150px;
 }
 
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .address {
+    padding-left: 70px;
+    padding-top: 45px;
+    padding-right: 72px;
+    padding-bottom: 40px;
+  }
+
+  .address__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .address__text {
+    width: 200px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .address__city {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+/*Десктоп*/
 @media (min-width: $desktop-width) {
   .address {
     position: absolute;

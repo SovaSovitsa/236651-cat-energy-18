@@ -1,4 +1,4 @@
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -47,7 +47,12 @@
     border: none;
   }
 
+  .menu__item {
+    padding-left: 15px;
+  }
+
   .menu__link {
+    padding-bottom: 6px;
     font-family: $main-font;
     font-size: 18px;
     line-height: 24px;

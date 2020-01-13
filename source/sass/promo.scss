@@ -43,9 +43,14 @@
   .promo {
     justify-content: flex-start;
     min-height: 850px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 117px;
+    padding-right: 117px;
     background: none;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .promo__text {
@@ -64,7 +69,8 @@
   .promo__wrapper::before {
     content: "";
     position: absolute;
-    top: -65px;
+    top: -25px;
+    left: -58px;
     display: block;
     width: 650px;
     height: 700px;

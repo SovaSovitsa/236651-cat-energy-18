@@ -9,6 +9,11 @@
   padding-right: 20px;
 }
 
+@mixin tablet-indents {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @mixin desktop-indents {
   padding-left: 110px;
   padding-right: 110px;

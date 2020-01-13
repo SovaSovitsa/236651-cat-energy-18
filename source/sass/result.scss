@@ -138,7 +138,27 @@
 
 @media (min-width: $tablet-width) {
   .result {
+    padding-left: 0;
+    padding-top: 43px;
+    padding-right: 0;
     background-color: $bg-usual;
+  }
+
+  .result__title {
+    @include tablet-indents;
+    margin-bottom: 65px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .result__content {
+    @include tablet-indents;
+  }
+
+  .result__story {
+    margin-bottom: 31px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .result__container {
@@ -149,33 +169,84 @@
   }
 
   .result__value:first-child {
-    margin-right: 40px;
+    margin-right: 42px;
   }
 
   .result__value {
-    width: 130px;
+    width: 162px;
+    padding-bottom: 19px;
+    font-size: 30px;
+    line-height: 37px;
   }
 
   .result__criterion {
-    width: 120px;
-    margin-left: -60px;
-    bottom: -5px;
+    width: 140px;
+    margin-left: -70px;
+    bottom: -6px;
+    font-size: 14px;
+    line-height: 14px;
     background-color: $bg-usual;
   }
 
   .result__price {
-    width: 130px;
+    width: 180px;
+    margin-top: 32px;
     text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .result__sum {
+    display: block;
+    margin-top: 10px;
   }
 
   .result__slider {
-    margin-top: 120px;
-    padding-bottom: 20px;
+    margin-top: 232px;
+    padding-bottom: 67px;
     background-color: $bg-color;
   }
 
   .result__wrapper {
+    position: relative;
+    width: 601px;
+    height: 469px;
     margin-top: -100px;
+    margin-bottom: 0;
+  }
+
+  .result__wrapper:before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: -62px;
+    display: block;
+    width: 338px;
+    height: 502px;
+    background: url("../img/before-tablet@1x.png") left no-repeat;
+  }
+
+  .result__wrapper:after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: -69px;
+    display: block;
+    width: 351px;
+    height: 517px;
+    background: url("../img/after-tablet@1x.png") right no-repeat;
+  }
+
+  .result__picture {
+    display: none;
+  }
+
+  .result__mode {
+    width: auto;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted $mode-border;
   }
 }
 
