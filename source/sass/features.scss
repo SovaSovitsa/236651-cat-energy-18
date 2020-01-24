@@ -128,6 +128,7 @@
 @media (min-width: $desktop-width) {
   .features {
     @include desktop-indents;
+    border-bottom: none;
   }
 
   .features__list {
@@ -135,15 +136,16 @@
   }
 
   .features__item {
-    width: 25%;
+    width: 245px;
     min-height: 260px;
-    padding-top: 130px;
+    padding-top: 102px;
     padding-left: 0;
     padding-right: 100px;
     padding-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .features__item::after {
-    left: 130px;
+    left: 115px;
   }
 }

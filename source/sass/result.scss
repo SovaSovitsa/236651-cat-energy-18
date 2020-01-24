@@ -280,24 +280,29 @@
   }
 }
 
+/*Десктоп*/
 @media (min-width: $desktop-width) {
   .result {
-    @include desktop-indents;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 23px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .result__title {
+    @include desktop-indents;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 76px;
   }
 
   .result__content {
-    width: 400px;
-    background-color: $bg-color;
+    width: 50%;
     padding-top: 50px;
-    padding-left: 50px;
+    padding-left: 110px;
+    padding-right: 165px;
+    background-color: $bg-color;
   }
 
   .result__slider {
@@ -306,7 +311,7 @@
   }
 
   .result__story {
-    margin-bottom: 50px;
+    margin-bottom: 67px;
   }
 
   .result__criterion {
@@ -316,16 +321,24 @@
   .result__container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .result__info {
     width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 18px;
   }
 
   .result__price {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
-    padding-right: 40px;
+    padding-right: 118px;
+  }
+
+  .result__mode {
+    line-height: 16px;
   }
 }

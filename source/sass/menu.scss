@@ -70,12 +70,16 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .menu__list {
-    font-size: 20px;
     color: $subtitle-color;
 
     &--current {
       border-bottom: 2px solid $main-color;
     }
+  }
+
+  .menu__link {
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .menu__link--main {

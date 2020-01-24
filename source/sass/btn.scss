@@ -34,6 +34,7 @@
   }
 }
 
+/*Планшет*/
 @media (min-width: $tablet-width) {
   .btn--promo {
     width: 245px;
@@ -52,7 +53,14 @@
   }
 }
 
+/*Десктоп*/
 @media (min-width: $desktop-width) {
+  .btn--promo {
+    width: 246px;
+    margin-top: 53px;
+    margin-left: -1px;
+  }
+
   .btn--other {
     width: 245px;
   }

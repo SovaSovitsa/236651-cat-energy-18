@@ -13,6 +13,7 @@
   align-items: center;
 }
 
+/*Планшет*/
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
@@ -25,8 +26,11 @@
   }
 }
 
+/*Десктоп*/
 @media (min-width: $desktop-width) {
   .page-header {
-    @include desktop-indents;
+    padding-left: 110px;
+    padding-right: 90px;
+    padding-top: 50px;
   }
 }
